@@ -1,0 +1,110 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ff4d4d;
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Fix for DelishDrop link */
+  h2 a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .restaurant-hero {
+    background-color: #ffeaea;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .restaurant-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .restaurant-hero p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Restaurant Cards */
+  .restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  .restaurant-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .restaurant-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .restaurant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .restaurant-card .info {
+    padding: 1rem;
+  }
+  
+  .restaurant-card h3 {
+    margin-bottom: 0.25rem;
+    color: #e60000;
+  }
+  
+  .restaurant-card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .restaurant-card span {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+  }
